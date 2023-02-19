@@ -10,7 +10,6 @@ exports.addItemToCart=(req,res)=>{
 
             const product = req.body.cartItems.product
             const item = cart.cartItems.find(c=>c.product==product);
-
             let condition,update;
 
             if(item){
